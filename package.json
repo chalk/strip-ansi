@@ -1,6 +1,6 @@
 {
   "name": "strip-ansi",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Strip ANSI color codes",
   "license": "MIT",
   "bin": {
