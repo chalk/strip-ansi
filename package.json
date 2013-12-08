@@ -1,7 +1,7 @@
 {
   "name": "strip-ansi",
   "version": "0.1.0",
-  "description": "Strip ANSI color codes",
+  "description": "Strip ANSI escape codes (used for colorizing strings in the terminal)",
   "license": "MIT",
   "bin": {
     "strip-ansi": "cli.js"

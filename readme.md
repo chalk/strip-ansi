@@ -1,6 +1,6 @@
 # strip-ansi [![Build Status](https://secure.travis-ci.org/sindresorhus/strip-ansi.png?branch=master)](http://travis-ci.org/sindresorhus/strip-ansi)
 
-> Strip ANSI color codes
+> Strip [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors_and_Styles) (used for colorizing strings in the terminal)
 
 Used in the terminal color module [chalk](https://github.com/sindresorhus/chalk).
 
