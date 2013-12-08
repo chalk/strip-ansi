@@ -4,21 +4,6 @@ var fs = require('fs');
 var strip = require('./index');
 var input = process.argv[2];
 
-
-function getStdin(cb) {
-	var ret = '';
-
-	process.stdin.setEncoding('utf8');
-
-	process.stdin.on('data', function (data) {
-		ret += data;
-	});
-
-	process.stdin.on('end', function () {
-		cb(ret);
-	});
-}
-
 if (process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
 	console.log('strip-ansi <input file> > <output file>');
 	console.log('or');
@@ -36,6 +21,7 @@ if (input) {
 	return;
 }
 
-getStdin(function (data) {
+process.stdin.setEncoding('utf8');
+process.stdin.on('data', function (data) {
 	process.stdout.write(strip(data));
 });
