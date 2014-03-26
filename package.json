@@ -1,6 +1,6 @@
 {
   "name": "strip-ansi",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Strip ANSI escape codes (used for colorizing strings in the terminal)",
   "license": "MIT",
   "bin": {
