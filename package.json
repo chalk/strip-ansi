@@ -47,6 +47,9 @@
     "command-line",
     "text"
   ],
+  "dependencies": {
+    "ansi-regex": "^0.1.0"
+  },
   "devDependencies": {
     "mocha": "*"
   }
