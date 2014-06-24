@@ -48,7 +48,7 @@
     "text"
   ],
   "dependencies": {
-    "ansi-regex": "^0.1.0"
+    "ansi-regex": "^0.2.1"
   },
   "devDependencies": {
     "mocha": "*"
