@@ -1,6 +1,6 @@
 {
   "name": "strip-ansi",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Strip ANSI escape codes",
   "license": "MIT",
   "bin": {
