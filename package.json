@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Strip ANSI escape codes",
   "license": "MIT",
-  "bin": {
-    "strip-ansi": "cli.js"
-  },
   "repository": "sindresorhus/strip-ansi",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "strip-ansi": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -48,7 +48,7 @@
     "text"
   ],
   "dependencies": {
-    "ansi-regex": "^0.2.1"
+    "ansi-regex": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
