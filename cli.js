@@ -44,4 +44,5 @@ if (input) {
 } else {
 	process.stdin.setEncoding('utf8');
 	process.stdin.on('data', init);
+	process.stdin.resume();
 }
