@@ -52,7 +52,7 @@
     "text"
   ],
   "dependencies": {
-    "ansi-regex": "^1.0.0"
+    "ansi-regex": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "*"
