@@ -7,15 +7,13 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "maintainers": [
     "Sindre Sorhus <sindresorhus@gmail.com> (http://sindresorhus.com)",
     "Joshua Appelman <jappelman@xebia.com> (http://jbnicolai.com)"
   ],
-  "bin": {
-    "strip-ansi": "cli.js"
-  },
+  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -27,6 +25,9 @@
     "cli.js"
   ],
   "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
     "strip",
     "trim",
     "remove",
@@ -37,7 +38,6 @@
     "colors",
     "terminal",
     "console",
-    "cli",
     "string",
     "tty",
     "escape",
