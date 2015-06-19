@@ -52,7 +52,8 @@
     "text"
   ],
   "dependencies": {
-    "ansi-regex": "^1.1.1"
+    "ansi-regex": "^1.1.1",
+    "meow": "^3.3.0"
   },
   "devDependencies": {
     "mocha": "*"

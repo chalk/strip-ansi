@@ -30,11 +30,11 @@ $ npm install --global strip-ansi
 $ strip-ansi --help
 
   Usage
-    strip-ansi <input-file> > <output-file>
-    cat <input-file> | strip-ansi > <output-file>
+    $ strip-ansi <input-file> > <output-file>
+    $ cat <input-file> | strip-ansi > <output-file>
 
   Example
-    strip-ansi unicorn.txt > unicorn-stripped.txt
+    $ strip-ansi unicorn.txt > unicorn-stripped.txt
 ```
 
 
