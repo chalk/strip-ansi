@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Strip ANSI escape codes",
   "license": "MIT",
-  "repository": "sindresorhus/strip-ansi",
+  "repository": "chalk/strip-ansi",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
