@@ -43,7 +43,7 @@
 		"text"
 	],
 	"dependencies": {
-		"ansi-regex": "^2.0.0"
+		"ansi-regex": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "*",
