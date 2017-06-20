@@ -1,13 +1,13 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
 test('strip color from string', t => {
-	t.is(fn('\u001b[0m\u001b[4m\u001b[42m\u001b[31mfoo\u001b[39m\u001b[49m\u001b[24mfoo\u001b[0m'), 'foofoo');
+	t.is(m('\u001B[0m\u001B[4m\u001B[42m\u001B[31mfoo\u001B[39m\u001B[49m\u001B[24mfoo\u001B[0m'), 'foofoo');
 });
 
 test('strip color from ls command', t => {
-	t.is(fn('\u001b[00;38;5;244m\u001b[m\u001b[00;38;5;33mfoo\u001b[0m'), 'foo');
+	t.is(m('\u001B[00;38;5;244m\u001B[m\u001B[00;38;5;33mfoo\u001B[0m'), 'foo');
 });
 test('strip reset;setfg;setbg;italics;strike;underline sequence from string', t => {
-	t.is(fn('\x1b[0;33;49;3;9;4mbar\x1b[0m'), 'bar');
+	t.is(m('\u001B[0;33;49;3;9;4mbar\u001B[0m'), 'bar');
 });
