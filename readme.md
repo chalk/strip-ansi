@@ -15,8 +15,11 @@ $ npm install strip-ansi
 ```js
 const stripAnsi = require('strip-ansi');
 
-stripAnsi('\u001B[4mUnicorn\u001B[0m');
-//=> 'Unicorn'
+const string = '\u001B[4mUnicorn\u001B[0m';
+console.log(string, string.length); // Unicorn 15
+
+const strippedString = stripAnsi(string);
+console.log(strippedString, strippedString.length); // Unicorn 7
 ```
 
 
