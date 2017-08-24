@@ -1,6 +1,6 @@
 {
   "name": "strip-ansi",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Strip ANSI escape codes",
   "license": "MIT",
   "repository": "chalk/strip-ansi",
@@ -9,6 +9,7 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
+  "contributors": ["Karl Morrison <karl@basickarl.io>"],
   "engines": {
     "node": ">=4"
   },
