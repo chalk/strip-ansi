@@ -20,6 +20,23 @@ stripAnsi('\u001B[4mUnicorn\u001B[0m');
 ```
 
 
+## API
+
+### stripAnsi(input)
+
+Returns a `string` with the stripped input.
+
+#### input
+
+Type: `string`
+
+Input to strip ANSI escape codes from.
+
+### stripAnsi.stream()
+
+Returns a [Transform stream](https://nodejs.org/api/stream.html#stream_class_stream_transform).
+
+
 ## Related
 
 - [strip-ansi-cli](https://github.com/chalk/strip-ansi-cli) - CLI for this module

@@ -43,10 +43,12 @@
     "text"
   ],
   "dependencies": {
-    "ansi-regex": "^3.0.0"
+    "ansi-regex": "^3.0.0",
+    "replacestream": "^4.0.3"
   },
   "devDependencies": {
     "ava": "*",
+    "get-stream": "^3.0.0",
     "xo": "*"
   }
 }
