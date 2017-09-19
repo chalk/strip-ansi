@@ -19,22 +19,17 @@ stripAnsi('\u001B[4mUnicorn\u001B[0m');
 //=> 'Unicorn'
 ```
 
+If you want to support streams you can use [`replacestream`](https://github.com/eugeneware/replacestream) like below:
 
-## API
+```js
+const fs = require('fs');
+const replacestream = require('replacestream');
+const stripAnsi = require('strip-ansi');
 
-### stripAnsi(input)
-
-Returns a `string` with the stripped input.
-
-#### input
-
-Type: `string`
-
-Input to strip ANSI escape codes from.
-
-### stripAnsi.stream()
-
-Returns a [Transform stream](https://nodejs.org/api/stream.html#stream_class_stream_transform).
+fs.createReadStream('unicorn.txt')
+	.pipe(replacestream(stripAnsi(), '')
+	.pipe(fs.createWriteStream('unicorn-stripped.txt'));
+```
 
 
 ## Related
