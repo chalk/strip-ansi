@@ -19,22 +19,11 @@ stripAnsi('\u001B[4mUnicorn\u001B[0m');
 //=> 'Unicorn'
 ```
 
-If you want to support streams you can use [`replacestream`](https://github.com/eugeneware/replacestream) like below:
-
-```js
-const fs = require('fs');
-const replacestream = require('replacestream');
-const stripAnsi = require('strip-ansi');
-
-fs.createReadStream('unicorn.txt')
-	.pipe(replacestream(stripAnsi(), '')
-	.pipe(fs.createWriteStream('unicorn-stripped.txt'));
-```
-
 
 ## Related
 
 - [strip-ansi-cli](https://github.com/chalk/strip-ansi-cli) - CLI for this module
+- [strip-ansi-stream](https://github.com/chalk/strip-ansi-stream) - Streaming version of this module
 - [has-ansi](https://github.com/chalk/has-ansi) - Check if a string has ANSI escape codes
 - [ansi-regex](https://github.com/chalk/ansi-regex) - Regular expression for matching ANSI escape codes
 - [chalk](https://github.com/chalk/chalk) - Terminal string styling done right
