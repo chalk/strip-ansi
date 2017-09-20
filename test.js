@@ -8,6 +8,7 @@ test('strip color from string', t => {
 test('strip color from ls command', t => {
 	t.is(m('\u001B[00;38;5;244m\u001B[m\u001B[00;38;5;33mfoo\u001B[0m'), 'foo');
 });
+
 test('strip reset;setfg;setbg;italics;strike;underline sequence from string', t => {
 	t.is(m('\u001B[0;33;49;3;9;4mbar\u001B[0m'), 'bar');
 });
