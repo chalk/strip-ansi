@@ -2,6 +2,19 @@
 
 > Strip [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-strip-ansi?utm_source=npm-strip-ansi&utm_medium=referral&utm_campaign=readme">Get professional support for 'strip-ansi' with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
+
+---
 
 ## Install
 
