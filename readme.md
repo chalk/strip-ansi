@@ -1,4 +1,4 @@
-# strip-ansi [![Build Status](https://travis-ci.org/chalk/strip-ansi.svg?branch=master)](https://travis-ci.org/chalk/strip-ansi)
+# strip-ansi [![Build Status](https://travis-ci.org/chalk/strip-ansi.svg?branch=master)](https://travis-ci.org/chalk/strip-ansi) [![strip-ansi Dev Token](https://badge.devtoken.rocks/strip-ansi)](https://devtoken.rocks/package/strip-ansi)
 
 > Strip [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
