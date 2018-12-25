@@ -33,6 +33,11 @@ stripAnsi('\u001B[4mUnicorn\u001B[0m');
 ```
 
 
+## Security
+
+To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
+
+
 ## Related
 
 - [strip-ansi-cli](https://github.com/chalk/strip-ansi-cli) - CLI for this module
