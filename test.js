@@ -12,3 +12,7 @@ test('strip color from ls command', t => {
 test('strip reset;setfg;setbg;italics;strike;underline sequence from string', t => {
 	t.is(stripAnsi('\u001B[0;33;49;3;9;4mbar\u001B[0m'), 'bar');
 });
+
+test('strip link from terminal link', t => {
+	t.is(stripAnsi('\u001B]8;;https://github.com\u0007click\u001B]8;;\u0007'), 'click');
+});
