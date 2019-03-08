@@ -32,7 +32,7 @@ stripAnsi('\u001B[4mUnicorn\u001B[0m');
 //=> 'Unicorn'
 
 stripAnsi('\u001B]8;;https://github.com\u0007click\u001B]8;;\u0007');
-// => 'Click'
+//=> 'Click'
 ```
 
 
