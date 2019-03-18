@@ -1,4 +1,7 @@
 'use strict';
 const ansiRegex = require('ansi-regex');
 
-module.exports = input => typeof input === 'string' ? input.replace(ansiRegex(), '') : input;
+const stripAnsi = input => typeof input === 'string' ? input.replace(ansiRegex(), '') : input;
+
+module.exports = stripAnsi;
+module.exports.default = stripAnsi;
