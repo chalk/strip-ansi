@@ -2,19 +2,6 @@
 
 > Strip [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) from a string
 
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-strip-ansi?utm_source=npm-strip-ansi&utm_medium=referral&utm_campaign=readme">Get professional support for 'strip-ansi' with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
-
----
 
 ## Install
 
@@ -36,11 +23,6 @@ stripAnsi('\u001B]8;;https://github.com\u0007Click\u001B]8;;\u0007');
 ```
 
 
-## Security
-
-To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
-
-
 ## Related
 
 - [strip-ansi-cli](https://github.com/chalk/strip-ansi-cli) - CLI for this module
@@ -56,6 +38,14 @@ To report a security vulnerability, please use the [Tidelift security contact](h
 - [Josh Junon](https://github.com/qix-)
 
 
-## License
+---
 
-MIT
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-strip-ansi?utm_source=npm-strip-ansi&utm_medium=referral&utm_campaign=readme">Get professional support for 'strip-ansi' with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
