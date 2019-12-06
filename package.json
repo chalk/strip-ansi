@@ -16,6 +16,8 @@
 		"test": "xo && ava && tsd"
 	},
 	"files": [
+		"es6.js",
+		"es6.d.js",
 		"index.js",
 		"index.d.ts"
 	],
