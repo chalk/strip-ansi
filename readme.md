@@ -22,6 +22,7 @@ stripAnsi('\u001B]8;;https://github.com\u0007Click\u001B]8;;\u0007');
 //=> 'Click'
 ```
 
+As shown above, it even strips [hyperlinks in terminals](https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda).
 
 ## strip-ansi for enterprise
 
