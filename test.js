@@ -1,5 +1,5 @@
 import test from 'ava';
-import stripAnsi from '.';
+import stripAnsi from './index.js';
 
 test('strip color from string', t => {
 	t.is(stripAnsi('\u001B[0m\u001B[4m\u001B[42m\u001B[31mfoo\u001B[39m\u001B[49m\u001B[24mfoo\u001B[0m'), 'foofoo');

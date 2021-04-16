@@ -11,7 +11,7 @@ $ npm install strip-ansi
 ## Usage
 
 ```js
-const stripAnsi = require('strip-ansi');
+import stripAnsi from 'strip-ansi';
 
 stripAnsi('\u001B[4mUnicorn\u001B[0m');
 //=> 'Unicorn'
