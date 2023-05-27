@@ -7,6 +7,5 @@ export default function stripAnsi(string) {
 		throw new TypeError(`Expected a \`string\`, got \`${typeof string}\``);
 	}
 
-	regex.lastIndex = 0;
 	return string.replace(regex, '');
 }
