@@ -2,6 +2,9 @@
 
 > Strip [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) from a string
 
+> [!NOTE]
+> Node.js has this built-in now with [`stripVTControlCharacters`](https://nodejs.org/api/util.html#utilstripvtcontrolcharactersstr). The benefit of this package is consistent behavior across Node.js versions and faster improvements. The Node.js version is actually based on this package.
+
 ## Install
 
 ```sh
