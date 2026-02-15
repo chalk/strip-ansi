@@ -7,8 +7,8 @@ export default function stripAnsi(string) {
 		throw new TypeError(`Expected a \`string\`, got \`${typeof string}\``);
 	}
 
-	// Fast path: if no ESC byte exists, there are no ANSI codes
-	if (!string.includes('\u001B')) {
+	// Fast path: ANSI codes require ESC (7-bit) or CSI (8-bit) introducer
+	if (!string.includes('\u001B') && !string.includes('\u009B')) {
 		return string;
 	}
 

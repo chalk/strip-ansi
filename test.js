@@ -22,3 +22,15 @@ test('strip OSC sequence with BEL terminator', t => {
 	const output = stripAnsi(input);
 	t.is(output, 'ABC\r\n');
 });
+
+test('strip color from string using 8-bit CSI introducer', t => {
+	t.is(stripAnsi('\u009B31mfoo\u009B39m'), 'foo');
+});
+
+test('return string as-is if no ANSI codes', t => {
+	t.is(stripAnsi('foo bar'), 'foo bar');
+});
+
+test('return empty string as-is', t => {
+	t.is(stripAnsi(''), '');
+});
