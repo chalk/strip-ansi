@@ -8,7 +8,7 @@ export default function stripAnsi(string) {
 	}
 
 	// Fast path: if no ESC byte exists, there are no ANSI codes
-	if (!string.includes('\x1B')) {
+	if (!string.includes('\u001B')) {
 		return string;
 	}
 
