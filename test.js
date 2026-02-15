@@ -16,3 +16,9 @@ test('strip reset;setfg;setbg;italics;strike;underline sequence from string', t 
 test('strip link from terminal link', t => {
 	t.is(stripAnsi('\u001B]8;;https://github.com\u0007click\u001B]8;;\u0007'), 'click');
 });
+
+test('strip OSC sequence with BEL terminator', t => {
+	const input = '\u001B[2J\u001B[m\u001B[HABC\r\n\u001B]0;C:\\WINDOWS\\system32\\cmd.exe\u0007\u001B[?25h';
+	const output = stripAnsi(input);
+	t.is(output, 'ABC\r\n');
+});
