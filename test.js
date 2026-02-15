@@ -16,3 +16,15 @@ test('strip reset;setfg;setbg;italics;strike;underline sequence from string', t 
 test('strip link from terminal link', t => {
 	t.is(stripAnsi('\u001B]8;;https://github.com\u0007click\u001B]8;;\u0007'), 'click');
 });
+
+test('strip color from string using 8-bit CSI introducer', t => {
+	t.is(stripAnsi('\u009B31mfoo\u009B39m'), 'foo');
+});
+
+test('return string as-is if no ANSI codes', t => {
+	t.is(stripAnsi('foo bar'), 'foo bar');
+});
+
+test('return empty string as-is', t => {
+	t.is(stripAnsi(''), '');
+});
